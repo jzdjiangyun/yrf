@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="coats.css">
+</head>
+
+
+<body>
+    <script>
+
+        window.addEventListener('load', function () {
+            var ul = document.querySelector('.nav-right>ul');
+            ul.children[1].className += 'nav-checked';
+            var tabs = document.querySelectorAll('.tab-control');
+            var plan = document.querySelectorAll('.plan');
+            var img = document.querySelectorAll('.plan img:last-of-type');
+            var shadowBox = document.querySelector('.shadow-box');
+            var shadowDiv = shadowBox.querySelector('.shadow-div');
+            var shadowBtn = shadowBox.querySelector('.shadow-btn>img');
+            tabs[0].className += ' tab-control-checked';
+            plan[0].style.display = 'block';
+
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].dataset.index = i;
+
+                tabs[i].addEventListener('click', function () {
+
+                    for (var i = 0; i < tabs.length; i++) {
+                        tabs[i].classList.remove('tab-control-checked');
+                        plan[i].style.display = 'none';
+                    }
+                    this.className += ' tab-control-checked';
+                    plan[this.dataset.index].style.display = 'block';
+                })
+            }
+            shadowBtn.addEventListener('click', function () {
+                shadowBox.style.display = 'none';
+            })
+            shadowBox.style.width = window.innerWidth + 'px';
+            shadowBox.style.height = window.innerHeight + 'px';
+            shadowBox.style.display = 'none';
+            for (var i = 0; i < img.length; i++) {
+
+                img[i].addEventListener('click', function () {
+                    shadowDiv.children[0].src = this.parentNode.children[0].src;
+                    shadowDiv.children[1].innerText = this.parentNode.children[1].innerText;
+                    shadowDiv.children[2].innerText = this.parentNode.children[2].innerText;
+                    shadowDiv.children[3].innerText = this.parentNode.children[3].innerText;
+                    shadowBox.style.display = 'block';
+
+                })
+            }
+
+        })
+    </script>
+    <header>
+        <div class="nav w over-f">
+            <div class="nav-left"><img src="img/logo.png" alt=""> </div>
+            <div class="nav-right">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <p>INDEX</p>
+                            首页
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>COATS</p>
+                            羽绒服
+                        </a>
+                    </li>
+                    <li>
+                        <a href="quilt.html">
+                            <p>QUILT</p>
+                            羽绒被
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>PRODUCTSTORY</p>
+                            产品故事
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>BRANDHISTORY</p>
+                            品牌历史
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>CONTACT US</p>
+                            联系我们
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>SHOPPING</p>
+                            商城入口
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="banner">
+
+        <ul>
+            <li>
+                <div><i></i></div>
+            </li>
+            <li>
+                <div><i></i></div>
+            </li>
+            <li>
+                <div><i></i></div>
+            </li>
+            <li>
+                <div><i></i></div>
+            </li>
+        </ul>
+        <img src="img/img11.png" alt="">
+    </section>
+    <section class=" tab-modle">
+        <div class="w-two over-f ">
+            <div class="tab">
+                <div class="tab-control ">
+                    <p class="e-title">FALL/WINTER</p>
+                    <p class="c-title">秋冬新品</p>
+                </div>
+                <div class="tab-control">
+                    <p class="e-title">MEN</p>
+                    <p class="c-title">男士</p>
+                </div>
+                <div class="tab-control">
+                    <p class="e-title">WOMEN</p>
+                    <p class="c-title">女士</p>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="plan-img">
+                    <img src="img/img32.png" alt="">
+                    <p><strong>BLAZEBOMBER</strong> </p>
+                    <p><strong> 羽绒款飞行员夹克</strong> </p>
+                    <p>¥5,800.00</p>
+                    <img src="img/img27.png" alt="">
+                </div>
+                <div class="plan-img">
+                    <img src="img/img39.png" alt="">
+                    <p><strong>BROOKLYN PARKA</strong> </p>
+                    <p><strong> 长款羽绒服</strong> </p>
+                    <p>¥7,800.00</p>
+                    <img src="img/img27.png" alt="">
+                </div>
+
+                <div class="plan-img">
+                    <img src="img/img33.png" alt="">
+                    <p><strong>HOLLINGER PARKA</strong> </p>
+                    <p><strong> 户外款羽绒服</strong> </p>
+                    <p>¥3,800.00</p>
+                    <img src="img/img27.png" alt="">
+                </div>
+
+                <div class="plan-img">
+                    <img src="img/img35.png" alt="">
+                    <p><strong>MADISON JACKET </strong> </p>
+                    <p><strong> 长款羽绒夹克</strong> </p>
+                    <p>¥6,800.00</p>
+                    <img src="img/img27.png" alt="">
+                </div>
+                <div class="plan-img">
+                    <img src="img/img34.png" alt="">
+                    <p><strong>portland parka
+                        </strong> </p>
+                    <p><strong> 羽绒服款派克大衣</strong> </p>
+                    <p>¥6,800.00</p>
+                    <img src="img/img27.png" alt="">
+                </div>
+                <div class="plan-img">
+                    <img src="img/img36.png" alt="">
+                    <p><strong>LU LU BOMBER
+                        </strong> </p>
+                    <p><strong>羽绒款飞行员夹克</strong> </p>
+                    <p>¥5,800.00</p>
+                    <img src="img/img27.png" alt="">
+                </div>
+                <div class="plan-img">
+                    <img src="img/img37.png" alt="">
+                    <p><strong>wynston parka
+                        </strong> </p>
+                    <p><strong> 派克大衣</strong> </p>
+                    <p>¥6,800.00</p>
+                    <img src="img/img27.png" alt="">
+                </div>
+
+
+            </div>
+            <div class="plan">
+                <div class="plan-img">
+                    <img src="img/img32.png" alt="">
+                    <p><strong>BLAZEBOMBER</strong> </p>
+                    <p><strong> 羽绒款飞行员夹克</strong> </p>
+                    <p>¥5,800.00</p>
+                    <img src="img/img27.png" alt="">
+                </div>
+                <div class="plan-img">
+                    <img src="img/img33.png" alt="">
+                    <p><strong>HOLLINGER PARKA</strong> </p>
+                    <p><strong> 户外款羽绒服</strong> </p>
+                    <p>¥3,800.00</p>
+                    <img src="img/img27.png" alt="">
+                </div>
+
+                <div class="plan-img">
+                    <img src="img/img37.png" alt="">
+                    <p><strong>wynston parka
+                        </strong> </p>
+                    <p><strong> 派克大衣</strong> </p>
+                    <p>¥6,800.00</p>
+                    <img src="img/img27.png" alt="">
+                </div>
+            </div>
+            <div class="plan">
+                <div class="plan-img">
+                    <img src="img/img39.png" alt="">
+                    <p><strong>BROOKLYN PARKA</strong> </p>
+                    <p><strong> 长款羽绒服</strong> </p>
+                    <p>¥7,800.00</p>
+                    <img src="img/img27.png" alt="">
+                </div>
+                <div class="plan-img">
+                    <img src="img/img35.png" alt="">
+                    <p><strong>MADISON JACKET </strong> </p>
+                    <p><strong> 长款羽绒夹克</strong> </p>
+                    <p>¥6,800.00</p>
+                    <img src="img/img27.png" alt="">
+                </div>
+                <div class="plan-img">
+                    <img src="img/img34.png" alt="">
+                    <p><strong>portland parka
+                        </strong> </p>
+                    <p><strong> 羽绒服款派克大衣</strong> </p>
+                    <p>¥6,800.00</p>
+                    <img src="img/img27.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <dl>
+                <dt>摩浩利</dt>
+                <dd>羽绒服</dd>
+                <dd>羽绒被</dd>
+                <dd>产品故事</dd>
+                <dd>品牌历史</dd>
+                <dd>联系我们</dd>
+            </dl>
+            <dl>
+                <dt>社交媒体</dt>
+                <dd>微信</dd>
+                <dd>微博</dd>
+            </dl>
+            <dl>
+                <dt>商城入口</dt>
+            </dl>
+            <ul class="footer-img">
+                <li><img src="img/img10.png" alt=""></li>
+                <li>Maholi Canada INC.</li>
+                <li>经营许可证：沪ICP备12032741号</li>
+                <li> Copyright © 摩浩利 2020，All Rights Reserved</li>
+            </ul>
+        </div>
+    </footer>
+    <section class="shadow-box">
+        <div class="shoadow-img-div">
+            <div class="shadow-btn"><img src="img/img28.png" alt=""></div>
+            <div class="shadow-div">
+                <img src="img/img25.png" alt="">
+                <p><strong>加拿大直邮进口鹅绒</strong> </p>
+                <p><strong> 五星级酒店双人95羽绒被</strong> </p>
+                <p>￥8,900.00</p>
+
+                <img src="img/maho.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

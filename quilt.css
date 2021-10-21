@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding:0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.w{
+    width: 1792px;
+   padding: 0 22px;
+    margin: auto;
+}
+.w-two{
+    width: 1590px;
+    margin: auto;
+}
+.f-left{
+    float: left;
+}
+.f-right{
+    float:right;
+}
+.over-f{
+    overflow: hidden;
+}
+.nav{
+    height: 158px;
+ 
+}
+.nav a{
+    height: 100%;
+    display: block;
+    font-size: 19px;
+    color:#717171;
+  text-align: center;
+ 
+}
+.nav p:first-child{
+    padding-top: 43px;
+}
+.nav .nav-checked,
+.nav li:hover{
+    border-bottom-color:#988878;
+    background:#efefef;
+}
+.nav-left{
+    float: left;
+    height: 100%;
+    line-height: 160px;
+}
+.nav-left>img{
+    vertical-align: middle;
+}
+.nav-right{
+float:right;
+}
+.nav li{
+    height: 158px;
+    float:left;
+    box-sizing: border-box;
+    border-bottom: 4px solid transparent;
+  
+}
+
+.nav ul li:first-of-type{
+    width: 122px;
+}
+.nav ul li:nth-of-type(2){
+    width: 128px;
+}
+.nav ul li:nth-of-type(3){
+    width: 120px;
+}
+.nav ul li:nth-of-type(4){
+    width: 158px;
+}
+.nav ul li:nth-of-type(5){
+    width: 223px;
+}
+.nav ul li:nth-of-type(6){
+    width: 188px;
+}
+.nav ul li:nth-of-type(7){
+    width: 166px;
+}
+.quilt-banner{
+    background: url(img/img21.png) no-repeat center -160px;
+    height: 925px;
+ 
+    position:relative
+   
+}
+.quilt-banner ul{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+}
+.quilt-banner ul li{
+    float: left;
+    margin-right: 22px;
+}
+.quilt-banner li>div{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border:2px solid transparent;
+    position: relative;
+}
+.quilt-banner li span{
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #988878;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.quilt-banner img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(700px);
+    bottom: 80px;
+}
+
+.quilt-banner li:hover div{
+    border-color: #988878;
+}
+
+.quilt-banner li:hover span{
+    background: transparent;
+}
+
+footer{
+    height: 690px;
+    background: #1f1f1f;
+
+}
+.footer{
+    width: 1320px;
+    padding-top: 140px;
+    margin: auto;
+}
+dl{
+    float: left;
+}
+dt{
+    color:#fff;
+    font-size: 20px;
+    margin-bottom: 32px;
+    margin-right: 235px;
+}
+dd{
+    color:#818181;
+    line-height: 36px;
+
+}
+.footer-img{
+    float: right;
+}
+.footer-img li:first-of-type{
+   margin-bottom: 100px;
+}
+.footer-img li:nth-last-of-type(n+1){
+    line-height: 33px;
+    color: #818181;
+}
+.tab-modle{
+    background:#edebe3;
+}
+.e-title{
+    font-size: 42px;
+    line-height:35px;
+    padding-left: 25px;
+}
+.c-title{
+    margin-top: 10px;
+    padding-left: 30px;
+}
+.tab-control{
+    border-left: 6px solid transparent;
+    height: 65px;
+    margin-top: 45px;
+    box-sizing: border-box;
+    width: 380px;
+    
+}
+.tab .tab-control:first-child{
+    margin-top: 0px;
+}
+.tab-control:hover,
+.tab-control-checked{
+    border-color: #988878;
+}
+
+.tab{
+    float: left;
+    margin-top: 115px;
+    margin-bottom: 105px;
+}
+.plan{
+    float: left;
+    width:1210px ;
+    font-size: 24px;
+    margin-top: 115px;
+    display: none;
+}
+.plan-img{
+    position: relative;
+    height: 575px;
+    width: 590px;
+    background: #fff;
+    float: left;
+    margin-bottom: 115px;
+}
+ .plan .plan-img:nth-of-type(2n-1){
+     margin-right: 30px;
+ }
+.plan img:first-of-type{
+display: block;
+}
+.plan p{
+    padding-left: 30px;
+}
+.plan p:first-of-type{
+    margin-top: 17px;
+}
+.plan p:nth-of-type(2){
+    line-height: 47px;
+}
+.plan-img>img:last-of-type{
+    position: absolute;
+    right: 25px;
+    bottom:25px;
+    cursor:pointer;
+}
+.shadow-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+.shadow-div{
+    position: relative;
+    background: #fff;
+  
+    height: 560px;
+}
+.shoadow-img-div{
+    width: 540px;
+    margin: 80px auto;
+}
+.shadow-div> img:first-of-type{
+    width: 540px;
+    height: 340px;
+}
+.shadow-div p:nth-of-type(2),
+.shadow-div p:first-of-type{
+    margin-left: 50px;
+  
+    margin-top: 35px;
+}
+.shadow-btn{
+    text-align: right;
+}
+.shadow-div p:nth-of-type(2){
+    margin-top:12px ;
+}
+.shadow-div p:last-of-type{
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+.shadow-div >img:last-of-type{
+    position: absolute;
+    width: 120px;
+    bottom: 50px;
+    right: 50px;
+}
